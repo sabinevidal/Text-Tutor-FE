@@ -1,0 +1,581 @@
+{
+	"info": {
+		"_postman_id": "24341958-33c4-473c-83e5-3caa6a9e33cf",
+		"name": "text-tutor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "public",
+			"item": [
+				{
+					"name": "/tutors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tutors",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tutors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/subjects",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Allow",
+								"value": "POST",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/subjects",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"subjects"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "41b3e30c-639c-4477-991d-bc2681904b17",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "1b1dbb5d-aba1-4db9-8a20-4ca49d5d8367",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "student",
+			"item": [
+				{
+					"name": "/tutors/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tutors/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tutors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZzNHdZQ00wb1E2U2xHX3RBYk9SayJ9.eyJpc3MiOiJodHRwczovL3RleHQtdHV0b3IuZXUuYXV0aDAuY29tLyIsInN1YiI6IkhrVWRmSVh6NXdwYnNlTDg2Q0xHRndocmZFWE1NbEF3QGNsaWVudHMiLCJhdWQiOiJodHRwczovL3RleHQtdHV0b3IvIiwiaWF0IjoxNTkwOTYxNjkxLCJleHAiOjE1OTM1NTM2OTEsImF6cCI6IkhrVWRmSVh6NXdwYnNlTDg2Q0xHRndocmZFWE1NbEF3Iiwic2NvcGUiOiJwb3N0OnR1dG9yIGdldDp0dXRvciBwYXRjaDp0dXRvciBkZWxldGU6dHV0b3IgcG9zdDpzdWJqZWN0IGdldDpzdWJqZWN0IGRlbGV0ZTpzdWJqZWN0IiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIiwicGVybWlzc2lvbnMiOlsicG9zdDp0dXRvciIsImdldDp0dXRvciIsInBhdGNoOnR1dG9yIiwiZGVsZXRlOnR1dG9yIiwicG9zdDpzdWJqZWN0IiwiZ2V0OnN1YmplY3QiLCJkZWxldGU6c3ViamVjdCJdfQ.fzqLq2Pnl4JOG9ocBwNGVxbQUTjeSLH9PlfbYTGxriVNRD1tmeaKLFKohzGmwXl5JAdL0J1Bs6Z7sZliobErW3Q853k_wYc2z2wc8cuybuUUMZLbuzrnAaIDeHo5ycZGVZDI49ebqN35ZqIogaxyYL48Bs58MOcgAmFz1oUIKnu9z5wNQzvyogQsXHte0jgvIKpLNFuy_NG7YPol_l_NzqxQS7SbEs48Zr8-yrqmM1PnyxdqNvwTcmk3b0Jv5KOiBU2sjZUZyoD0oX5Nl4BpjPeVQ6MArcS_9Fb1w1tZzD3ehjwUxUpcaO8HWN6HqBRR-LEt5hpYE1wkYYsX46T2Jw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2bd26573-12e6-46fa-958f-55c0cf487277",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "0c983648-87b0-4204-a4ed-30946fbc4c24",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "tutor",
+			"item": [
+				{
+					"name": "/tutors",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"sam@email.com\",\n  \"name\": \"Sam\",\n  \"phone\": \"12323445364\",\n  \"classes\": [\n    {\n\t    \"grade\": 8,\n\t    \"id\": 16,\n\t    \"name\": \"Maths\"\n    },\n    {\n    \t\"grade\": 8,\n    \t\"id\": 7,\n\t    \"name\": \"English\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tutors",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tutors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/subjects",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"grade\": 8,\n  \"name\": \"Maths\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/subjects",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"subjects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tutors",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"classes\": [\n      {\n        \"grade\": 10,\n        \"id\": 14,\n        \"name\": \"English\"\n      },\n      {\n        \"grade\": 8,\n        \"id\": 15,\n        \"name\": \"English\"\n      }\n    ],\n    \"email\": \"patch@email.com\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tutors/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tutors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tutors/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tutors/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tutors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tutors/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tutors/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tutors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZzNHdZQ00wb1E2U2xHX3RBYk9SayJ9.eyJpc3MiOiJodHRwczovL3RleHQtdHV0b3IuZXUuYXV0aDAuY29tLyIsInN1YiI6IkhrVWRmSVh6NXdwYnNlTDg2Q0xHRndocmZFWE1NbEF3QGNsaWVudHMiLCJhdWQiOiJodHRwczovL3RleHQtdHV0b3IvIiwiaWF0IjoxNTkwOTYxNjkxLCJleHAiOjE1OTM1NTM2OTEsImF6cCI6IkhrVWRmSVh6NXdwYnNlTDg2Q0xHRndocmZFWE1NbEF3Iiwic2NvcGUiOiJwb3N0OnR1dG9yIGdldDp0dXRvciBwYXRjaDp0dXRvciBkZWxldGU6dHV0b3IgcG9zdDpzdWJqZWN0IGdldDpzdWJqZWN0IGRlbGV0ZTpzdWJqZWN0IiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIiwicGVybWlzc2lvbnMiOlsicG9zdDp0dXRvciIsImdldDp0dXRvciIsInBhdGNoOnR1dG9yIiwiZGVsZXRlOnR1dG9yIiwicG9zdDpzdWJqZWN0IiwiZ2V0OnN1YmplY3QiLCJkZWxldGU6c3ViamVjdCJdfQ.fzqLq2Pnl4JOG9ocBwNGVxbQUTjeSLH9PlfbYTGxriVNRD1tmeaKLFKohzGmwXl5JAdL0J1Bs6Z7sZliobErW3Q853k_wYc2z2wc8cuybuUUMZLbuzrnAaIDeHo5ycZGVZDI49ebqN35ZqIogaxyYL48Bs58MOcgAmFz1oUIKnu9z5wNQzvyogQsXHte0jgvIKpLNFuy_NG7YPol_l_NzqxQS7SbEs48Zr8-yrqmM1PnyxdqNvwTcmk3b0Jv5KOiBU2sjZUZyoD0oX5Nl4BpjPeVQ6MArcS_9Fb1w1tZzD3ehjwUxUpcaO8HWN6HqBRR-LEt5hpYE1wkYYsX46T2Jw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "824f7fda-3392-4917-8cb4-7803f6426691",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "100c6e8b-6009-41a1-b538-c14318f66624",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "/subjects/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/subjects/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"subjects",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/subjects",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"grade\": 8,\n  \"name\": \"Maths\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/subjects",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"subjects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tutors",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"sam@email.com\",\n  \"name\": \"Sam\",\n  \"phone\": \"12323445364\",\n  \"classes\": [\n    {\n\t    \"grade\": 8,\n\t    \"id\": 16,\n\t    \"name\": \"Maths\"\n    },\n    {\n    \t\"grade\": 8,\n    \t\"id\": 7,\n\t    \"name\": \"English\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tutors",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tutors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tutors",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"classes\": [\n      {\n        \"grade\": 10,\n        \"id\": 14,\n        \"name\": \"English\"\n      },\n      {\n        \"grade\": 8,\n        \"id\": 15,\n        \"name\": \"English\"\n      }\n    ],\n    \"email\": \"patch@email.com\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tutors/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tutors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/subjects/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/subjects/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"subjects",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tutors/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tutors/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tutors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tutors/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/tutors/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tutors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZzNHdZQ00wb1E2U2xHX3RBYk9SayJ9.eyJpc3MiOiJodHRwczovL3RleHQtdHV0b3IuZXUuYXV0aDAuY29tLyIsInN1YiI6IkhrVWRmSVh6NXdwYnNlTDg2Q0xHRndocmZFWE1NbEF3QGNsaWVudHMiLCJhdWQiOiJodHRwczovL3RleHQtdHV0b3IvIiwiaWF0IjoxNTkwOTYxNjkxLCJleHAiOjE1OTM1NTM2OTEsImF6cCI6IkhrVWRmSVh6NXdwYnNlTDg2Q0xHRndocmZFWE1NbEF3Iiwic2NvcGUiOiJwb3N0OnR1dG9yIGdldDp0dXRvciBwYXRjaDp0dXRvciBkZWxldGU6dHV0b3IgcG9zdDpzdWJqZWN0IGdldDpzdWJqZWN0IGRlbGV0ZTpzdWJqZWN0IiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIiwicGVybWlzc2lvbnMiOlsicG9zdDp0dXRvciIsImdldDp0dXRvciIsInBhdGNoOnR1dG9yIiwiZGVsZXRlOnR1dG9yIiwicG9zdDpzdWJqZWN0IiwiZ2V0OnN1YmplY3QiLCJkZWxldGU6c3ViamVjdCJdfQ.fzqLq2Pnl4JOG9ocBwNGVxbQUTjeSLH9PlfbYTGxriVNRD1tmeaKLFKohzGmwXl5JAdL0J1Bs6Z7sZliobErW3Q853k_wYc2z2wc8cuybuUUMZLbuzrnAaIDeHo5ycZGVZDI49ebqN35ZqIogaxyYL48Bs58MOcgAmFz1oUIKnu9z5wNQzvyogQsXHte0jgvIKpLNFuy_NG7YPol_l_NzqxQS7SbEs48Zr8-yrqmM1PnyxdqNvwTcmk3b0Jv5KOiBU2sjZUZyoD0oX5Nl4BpjPeVQ6MArcS_9Fb1w1tZzD3ehjwUxUpcaO8HWN6HqBRR-LEt5hpYE1wkYYsX46T2Jw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "9a54dc03-8638-4d44-884c-a1a8f838d055",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "0b9d8d76-85db-44fb-8f24-a5663c4b4073",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
